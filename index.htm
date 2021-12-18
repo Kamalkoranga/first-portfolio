@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            scroll-behavior: smooth;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        /* Navbar */
+
+        nav {
+            background-color: rgb(98, 204, 231);
+            text-align: center;
+        }
+
+        nav li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 20px;
+            padding: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        nav li a:hover {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        }
+
+        /* Home section */
+
+        .home {
+            height: 850px;
+            background-color: rgba(151, 147, 147, 0.205);
+            color: rgb(0, 0, 0);
+            /* margin: 20px 0; */
+            background-image: url(img/avataaars.png);
+            background-size: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .home div {
+            padding: 40px;
+        }
+
+        .para1 {
+            /* border: 2px solid black; */
+            margin-top: 336px;
+            text-align: right;
+            padding-right: 90px;
+            font-size: 40px;
+        }
+
+        .para2 {
+            /* border: 2px solid black; */
+            margin-top: 200px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Projects Section */
+
+        .projects {
+            background-color: rgba(151, 147, 147, 0.205);
+            height: 850px;
+            /* margin: 20px 0; */
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .projects h2 {
+            font-size: 45px;
+            padding: 20px;
+            /* margin-top: 40px; */
+        }
+
+        .projects div img {
+            width: 250px;
+            padding: 20px;
+            margin: 40px;
+            border: 3px solid;
+        }
+
+        .projects div img:hover {
+            opacity: 0.5;
+        }
+
+        /* About Us */
+
+        .about {
+            height: 600px;
+            background-color: rgba(151, 147, 147, 0.205);
+            text-align: center;
+            padding: 40px 40px 50px 40px;
+        }
+
+        .wrapper:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgba(156, 156, 156, 0.527);
+            border: 0;
+        }
+
+        .wrapper {
+            /* border: 2px solid black; */
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .about h2 {
+            font-size: 45px;
+            padding: 20px;
+        }
+
+        .about img {
+            float: right;
+        }
+
+        .about .about-para h4 {
+            font-size: 35px;
+        }
+
+        .about-para {
+            text-align: left;
+            font-size: 20px;
+            padding: 40px 40px 40px 20px;
+            margin-bottom: 110px;
+            margin-top: 120px;
+        }
+
+        /* Ccontact Us */
+
+        .contact {
+            padding: 100px 0;
+            height: 700px;
+            background-color: rgba(151, 147, 147, 0.205);
+            text-align: center;
+        }
+
+        .contact-container .form {
+            /* border: 2px solid black; */
+            border-radius: 30px;
+            padding: 40px;
+            margin: 0 40px;
+            font-size: 20px;
+        }
+
+        .contact-container .form:hover{
+            /* border: 1px solid black; */
+            background-color: rgba(161, 159, 159, 0.363);
+        }
+
+        .contact .contact-container h2 {
+            font-size: 45px;
+            padding: 20px;
+        }
+
+        input[type="submit"] {
+            border-radius: 20px;
+            border: 1px solid black;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .name,
+        .email,
+        .subject {
+            width: 25%;
+            height: 35px;
+            border: 0;
+            /* background: #ffffff; */
+            font-size: 16px;
+            padding: 20px;
+            font-weight: bold;
+            border: 1px solid rgb(102, 99, 99);
+        }
+
+        .message {
+            width: 25%;
+            height: 9rem;
+            border: 0;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 20px;
+            /* background: #6d6c6c21; */
+            border: 1px solid rgb(102, 99, 99);
+
+        }
+
+        /* footer section */
+
+        footer {
+            background-color: rgb(98, 204, 231);
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        footer a.items:hover {
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+        footer li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 30px;
+        }
+
+        .copywrite {
+            font-weight: lighter;
+            opacity: 0.9;
+        }
+
+        .copywrite:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+
+        <section class="home" id="home">
+            <div>
+                <p class="para1">Hi, I'm Kamal <br>
+                    student and developer</p>
+            </div>
+
+            <div class="para2">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat sed eveniet ad debitis iusto
+                    ratione tempora expedita labore explicabo culpa voluptatibus dolorum aliquam aliquid fuga veritatis
+                    suscipit molestiae autem.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section class="projects" id="projects">
+            <h2>Our Projects</h2>
+            <p>There are some projects that are made up of different technology</p>
+            <div class="project-img">
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+                <a href="#"><img src="img/avataaars.png" alt=""></a>
+            </div>
+        </section>
+
+        <!-- About Us -->
+
+        <section class="about" id="about" title="About Us">
+            <h2>About Me</h2>
+            <div class="wrapper">
+
+                <img src="img/avataaars.png" width="400px" alt="" title="Kamal Singh">
+                <div class="about-para">
+                    <h4>Hello Myself Kamal Koranga</h4>
+                    <p> ipsum dolor sit, amet consectetur adipisicing elit. Laborum exercitationem deserunt accusamus,
+                        quibusdam ullam non tempora consectetur sapiente laboriosam explicabo. Sint commodi porro eius
+                        similique neque beatae numquam molestiae nobis? Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Soluta illum voluptates quod consequuntur at porro rem aperiam adipisci, officiis
+                        exercitationem sunt nemo temporibus magnam labore excepturi assumenda suscipit ab dolorum!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+
+                <div class="form">
+                    <form action="#">
+                        <!-- <label for="name">Name: </label> -->
+                        <input type="text" name="name" class="name" placeholder="Name" required>
+                        <br><br>
+                        <!-- <label for="email">Email: </label> -->
+                        <input type="text" name="email" class="email" placeholder="Email" required>
+                        <br><br>
+                        <input type="text" name="subject" class="subject" id="" required placeholder="Subject">
+                        <!-- <label for="message">Message: </label> -->
+                        <br><br>
+                        <textarea name="message" class="message" placeholder="Message"
+                            required></textarea>
+                        <br><br>
+                        <input type="submit" value="Send Message!">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <ul>
+                <li><a href="#" class="items">Twitter</a></li> |
+                <li><a href="#" class="items">Instagram</a></li> |
+                <li><a href="#" class="items">Facebook</a></li> |
+                <li><a href="#" class="items">Github</a></li> |
+                <li><a href="#" class="items">Portfolio</a></li> |
+                <li><a href="#" class="copywrite"> &copy; 2021|Kamal Koranga</a></li>
+            </ul>
+        </footer>
+    </main>
+
+    <script></script>
+</body>
+
+</html>
